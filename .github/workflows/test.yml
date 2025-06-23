@@ -13,4 +13,4 @@ jobs:
         run: |
           gh workflow run --repo=msargent-dev/dynamic-exec concurrency-dispatch.yml
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Ensure necessary permissions
+          GITHUB_TOKEN: ${{ secrets.PAT }} # Ensure necessary permissions
