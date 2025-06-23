@@ -5,6 +5,8 @@ on:
 
 jobs:
   dispatch_reusable_workflow:
+    permissions:
+      actions: write
     runs-on: ubuntu-latest
     steps:
       - name: Dispatch Reusable Workflow
